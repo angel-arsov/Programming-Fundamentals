@@ -1,0 +1,5 @@
+To “rotate an array on the right” means to move its last element first: 
+{1, 2, 3} => {3, 1, 2}.
+Write a program to read an array of n integers (space separated on a single line) 
+and an integer k, 
+rotate the array right k times and sum the obtained arrays after each rotation.
