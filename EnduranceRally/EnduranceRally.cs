@@ -11,7 +11,7 @@ namespace EnduranceRally
         {
             var driversNames = Console.ReadLine().Split(' ').ToList();
             var zonesNumbers = Console.ReadLine().Split(' ').Select(double.Parse).ToList();
-            var chekcpointIndexes = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+            var checkpointIndexes = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
 
             var listOfDrivers = new List<Driver>();
             foreach (var item in driversNames)
@@ -26,7 +26,7 @@ namespace EnduranceRally
                 var currentFuel = driver.Fuel();
                 for (int i = 0; i < zonesNumbers.Count; i++) 
                 {
-                    if (chekcpointIndexes.Contains(i)) 
+                    if (checkpointIndexes.Contains(i)) 
                     {
                         currentFuel += zonesNumbers[i];
                     }
